@@ -2011,4 +2011,61 @@ a:hover, a:active {
     top: -200px;
   }
 }
+
+/* MOZILLA ABSOLUTE POSITION -- Fixing the bug */
+@-moz-document url-prefix() {
+  /* HOME -- above the fold header*/
+  .header {
+    margin-top: 100px;
+    min-height: 70vh;
+    padding-bottom: 0 !important;
+  }
+  .above-the-fold {
+    display: flex;
+    max-width: 90vw;
+    align-items: flex-end;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .above-the-fold .main-info {
+    color: #000033;
+  }
+  .above-the-fold .chapel {
+    position: relative;
+    height: 440px;
+  }
+  @media (min-width: 768px) {
+    .above-the-fold .chapel {
+      height: 100%;
+    }
+  }
+  .above-the-fold .chapel .chapel-img {
+    display: block;
+    margin: 50px auto 0 auto;
+    height: 400px;
+    position: absolute;
+    right: 100px;
+    bottom: -15px;
+  }
+  @media (min-width: 768px) {
+    .above-the-fold .chapel .chapel-img {
+      margin: auto auto 0 auto;
+      right: 0px;
+      bottom: -240px;
+    }
+  }
+  @media (min-width: 992px) {
+    .above-the-fold .chapel .chapel-img {
+      right: -30px;
+      bottom: -190px;
+      height: 500px;
+    }
+  }
+  @media (min-width: 1177px) {
+    .above-the-fold .chapel .chapel-img {
+      right: 50px;
+      bottom: -190px;
+    }
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,39 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,900|Londrina+Solid:400,900');
 
-@-moz-document url-prefix() {
-
-    .chapel{
-        position: relative;
-        height: 440px;
-
-        @media (min-width: $breekpunt1) {
-            height: 100%;
-        }
-
-        .chapel-img{
-            display: block;
-            margin: 50px auto 0 auto;
-            height: 400px;
-            position: absolute;
-            right: 100px;
-            bottom: -15px; 
-          
-            @media (min-width: $breekpunt2) {
-                right: -50px;
-                bottom: -200px; 
-                height: 500px;
-            }
-
-            @media (min-width: $breekpunt3a) {
-                right: 100px;
-                bottom: -190px; 
-            }
-        }
-        
-    }    
-
-}
-
 /* Variables*/
 
 $color1: #000033;
@@ -1861,9 +1827,70 @@ background-color: $color4;
     }
 }
 
+/* MOZILLA ABSOLUTE POSITION -- Fixing the bug */
+
+@-moz-document url-prefix() {
+/* HOME -- above the fold header*/
+
+.header{
+    margin-top: 100px;
+    min-height: 70vh;
+    padding-bottom: 0 !important;
+    }
 
 
- 
+    .above-the-fold{
+        display: flex;
+        max-width: 90vw;
+        align-items: flex-end;
+        padding: 0;
+        box-sizing: border-box;
+        
+
+        .main-info{
+            color: $color1;
+        }
+
+        .chapel{
+            position: relative;
+            height: 440px;
+
+            @media (min-width: $breekpunt1) {
+                height: 100%;
+            }
+
+            .chapel-img{
+                display: block;
+                margin: 50px auto 0 auto;
+                height: 400px;
+                position: absolute;
+                right: 100px;
+                bottom: -15px; 
+              
+
+                @media (min-width: $breekpunt1) {
+                    margin: auto auto 0 auto;
+                    right: 0px;
+                    bottom: -240px; 
+                }
+
+                @media (min-width: $breekpunt2) {
+                    right: -30px;
+                    bottom: -190px; 
+                    height: 500px;
+                }
+
+                @media (min-width: $breekpunt3) {
+                    right: 50px;
+                    bottom: -190px; 
+                }
+
+            }
+            
+        }    
+    }
+
+}
 
 
 
