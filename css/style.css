@@ -155,7 +155,7 @@ a:hover, a:active {
   cursor: pointer;
 }
 
-/*sidebar rotated*/
+/*General elements - sidebar rotated*/
 .fixed-bottom {
   margin-left: auto;
   width: 400px;
@@ -216,7 +216,7 @@ a:hover, a:active {
   background-color: white;
 }
 
-/*navbar*/
+/* General elements - navbar*/
 .sticky-top {
   background-color: white;
   /*
@@ -361,6 +361,92 @@ a:hover, a:active {
   color: #000033;
 }
 
+/* General elements - cobbled transition*/
+.cobbled-road {
+  padding: 0;
+  height: 20px;
+  width: 100%;
+  background-image: url(../images/cobbles-transition.png);
+  background-repeat: repeat-x;
+}
+
+.cobbled-road-white {
+  padding: 0;
+  height: 20px;
+  width: 100%;
+  background-image: url(../images/cobbles-transition-white.png);
+  background-repeat: repeat-x;
+  background-color: #000033;
+}
+
+.cobbled-road-white-golden {
+  padding: 0;
+  height: 20px;
+  width: 100%;
+  background-image: url(../images/cobbles-transition-white.png);
+  background-repeat: repeat-x;
+  background-color: #CCCC99;
+}
+
+.cobbled-road-white-lightblue {
+  padding: 0;
+  height: 20px;
+  width: 100%;
+  background-image: url(../images/cobbles-transition-white-lightblue.png);
+  background-repeat: repeat-x;
+  background-color: #CCCC99;
+}
+
+.cobbled-road-lightblue {
+  padding: 0;
+  height: 20px;
+  width: 100%;
+  background-image: url(../images/cobbles-transition-lightblue.png);
+  background-repeat: repeat-x;
+  background-color: white;
+}
+
+/*General elements - footer*/
+.darkblue {
+  background-color: #000033;
+}
+
+.lightblue {
+  background-color: #336699;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer .footer-content {
+  text-align: right;
+}
+
+.footer .footer-content .footer-item {
+  display: inline-block;
+  margin-left: 20px;
+  color: #000033;
+}
+
+.footer .footer-content .footer-item.white {
+  color: white;
+}
+
+.footer .footer-content .footer-item:hover, .footer .footer-content .footer-item:active {
+  color: #336699;
+}
+
+.footer .footer-content .footer-item:hover.white, .footer .footer-content .footer-item:active.white {
+  color: #CCCC99;
+}
+
+/*******STYLES STRUCTURED PER PAGE******/
 /* HOME -- clouds in the back*/
 .movingclouds1 {
   position: absolute;
@@ -480,6 +566,72 @@ a:hover, a:active {
     right: 100px;
     bottom: -175px;
   }
+}
+
+/*HOME -- below the fold info*/
+.below-the-fold {
+  background-image: url(../images/cobbles-pattern1.png), url(../images/cobbles-pattern2.png);
+  background-repeat: no-repeat;
+  background-position: top right, center left;
+  background-color: #000033;
+  color: white;
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+.below-the-fold .about {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .below-the-fold .about .space-left {
+    -webkit-box-ordinal-group: -1;
+        -ms-flex-order: -2;
+            order: -2;
+  }
+}
+
+.below-the-fold .about .slowmo {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .below-the-fold .about .slowmo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: +1;
+            order: +1;
+  }
+}
+
+@media (min-width: 768px) {
+  .below-the-fold .about .stopwatch {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
+.below-the-fold .about .stopwatch .stopwatch-img {
+  display: block;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .below-the-fold .about .space-right {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: +2;
+            order: +2;
+  }
+}
+
+.below-the-fold .about .crocodile-img {
+  display: block;
+  margin: 20px auto 0 auto;
 }
 
 /* TIPS -- holy cross */
@@ -1858,163 +2010,5 @@ a:hover, a:active {
   .crowdfunding-menu .cf-flexcol .cf-card .sweater-img {
     top: -200px;
   }
-}
-
-/*cobbled transition*/
-.cobbled-road {
-  padding: 0;
-  height: 20px;
-  width: 100%;
-  background-image: url(../images/cobbles-transition.png);
-  background-repeat: repeat-x;
-}
-
-/*HOME -- below the fold info*/
-.below-the-fold {
-  background-image: url(../images/cobbles-pattern1.png), url(../images/cobbles-pattern2.png);
-  background-repeat: no-repeat;
-  background-position: top right, center left;
-  background-color: #000033;
-  color: white;
-  position: relative;
-  padding-top: 80px;
-  padding-bottom: 30px;
-}
-
-.below-the-fold .about {
-  margin-top: 50px;
-  padding-bottom: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media (min-width: 768px) {
-  .below-the-fold .about .space-left {
-    -webkit-box-ordinal-group: -1;
-        -ms-flex-order: -2;
-            order: -2;
-  }
-}
-
-.below-the-fold .about .slowmo {
-  margin-bottom: 30px;
-}
-
-@media (min-width: 768px) {
-  .below-the-fold .about .slowmo {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: +1;
-            order: +1;
-  }
-}
-
-@media (min-width: 768px) {
-  .below-the-fold .about .stopwatch {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-  }
-}
-
-.below-the-fold .about .stopwatch .stopwatch-img {
-  display: block;
-  margin: auto;
-}
-
-@media (min-width: 768px) {
-  .below-the-fold .about .space-right {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: +2;
-            order: +2;
-  }
-}
-
-.below-the-fold .about .crocodile-img {
-  display: block;
-  margin: 20px auto 0 auto;
-}
-
-/*mobile button crowdfunding*/
-.cf-cta {
-  width: 100%;
-  height: 50px;
-}
-
-/*another cobbled transition*/
-.cobbled-road-white {
-  padding: 0;
-  height: 20px;
-  width: 100%;
-  background-image: url(../images/cobbles-transition-white.png);
-  background-repeat: repeat-x;
-  background-color: #000033;
-}
-
-.cobbled-road-white-golden {
-  padding: 0;
-  height: 20px;
-  width: 100%;
-  background-image: url(../images/cobbles-transition-white.png);
-  background-repeat: repeat-x;
-  background-color: #CCCC99;
-}
-
-.cobbled-road-white-lightblue {
-  padding: 0;
-  height: 20px;
-  width: 100%;
-  background-image: url(../images/cobbles-transition-white-lightblue.png);
-  background-repeat: repeat-x;
-  background-color: #CCCC99;
-}
-
-.cobbled-road-lightblue {
-  padding: 0;
-  height: 20px;
-  width: 100%;
-  background-image: url(../images/cobbles-transition-lightblue.png);
-  background-repeat: repeat-x;
-  background-color: white;
-}
-
-/*footer*/
-.darkblue {
-  background-color: #000033;
-}
-
-.lightblue {
-  background-color: #336699;
-}
-
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.footer .footer-content {
-  text-align: right;
-}
-
-.footer .footer-content .footer-item {
-  display: inline-block;
-  margin-left: 20px;
-  color: #000033;
-}
-
-.footer .footer-content .footer-item.white {
-  color: white;
-}
-
-.footer .footer-content .footer-item:hover, .footer .footer-content .footer-item:active {
-  color: #336699;
-}
-
-.footer .footer-content .footer-item:hover.white, .footer .footer-content .footer-item:active.white {
-  color: #CCCC99;
 }
 /*# sourceMappingURL=style.css.map */
