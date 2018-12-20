@@ -718,7 +718,7 @@ background-color: $color4;
 
     .cross-box-2, .cross-box-4, .cross-box-5, .cross-box-6, .cross-box-8{
         background-color: $alpha_color2;
-        transition: all 1s;
+        transition: all 2s;
         border-style: solid;
     }
 
@@ -734,7 +734,8 @@ background-color: $color4;
             border-style: solid;
             border-width: 5px 5px 0 5px;
             border-radius: 16px 16px 0 0; 
-
+            position: relative;
+            top: 5px;
         }
 
         .cross-box-4{
@@ -744,46 +745,12 @@ background-color: $color4;
         }
 
         .cross-box-5{
-            border-style: hidden;
+            border-style: solid;
             width:26%;
-            position: relative;
+            box-sizing: border-box;
+            border: 5px 0;
+            border-color: $color1;
 
-            .retouche1{
-                background-color: $color1;
-                height:5px;
-                width:5px;
-                position: absolute;
-                top: 0;
-                left: 0;
-
-            }
-
-            .retouche2{
-                background-color: $color1;
-                height:5px;
-                width:5px;
-                position: absolute;
-                top: 0;
-                right: 0;
-            }
-
-            .retouche3{
-                background-color: $color1;
-                height:5px;
-                width:5px;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-            }
-
-            .retouche4{
-                background-color: $color1;
-                height:5px;
-                width:5px;
-                position: absolute;
-                bottom: 0;
-                right: 0;
-            }
         }
 
         .cross-box-6{
@@ -797,6 +764,8 @@ background-color: $color4;
             border-width: 0 5px 5px 5px;
             border-radius: 0 0 16px 16px;
             height: 50vh;
+            position: relative;
+            top: -5px;
         }
 
     }
