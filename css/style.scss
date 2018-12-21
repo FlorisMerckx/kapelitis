@@ -13,8 +13,10 @@ $color4: white;
 $alpha_color1: rgba($color1, 0.5);
 $alpha_color2: rgba($color2, 0.6);
 
-$fontset1: 'Londrina Solid', cursive;
-$fontset2: 'Lato', sans-serif;
+$fontset1: 'Londrina Solid',
+cursive;
+$fontset2: 'Lato',
+sans-serif;
 
 $breekpunt1: 768px;
 $breekpunt2: 992px;
@@ -33,58 +35,62 @@ $breekpunt-form8: 1412px;
 
 
 /* General styles*/
-*{
-    padding: 0; 
+* {
+    padding: 0;
     margin: 0;
     font-family: $fontset2;
     box-sizing: border-box;
-    font-size: 1em; 
+    font-size: 1em;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     position: relative;
 }
 
-.st0{
-    fill:$color2;
-}
-.st1{
-    fill:$color4;
-}
-.st2{
-    fill:$color1;
+.st0 {
+    fill: $color2;
 }
 
-.st3{
-    fill:$color3; 
+.st1 {
+    fill: $color4;
 }
 
-.st4{
-    fill:$color3;
-    opacity: 0.6; 
+.st2 {
+    fill: $color1;
+}
+
+.st3 {
+    fill: $color3;
+}
+
+.st4 {
+    fill: $color3;
+    opacity: 0.6;
 }
 
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-family: $fontset1;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
-h1{
+h1 {
     font-size: 6em;
     line-height: 1em;
     font-weight: 900;
 
     @media (min-width: $breekpunt2) {
-    font-size: 9.5em;
-    line-height: 1em;
-    font-weight: 900;
+        font-size: 9.5em;
+        line-height: 1em;
+        font-weight: 900;
     }
 }
 
-h2{
+h2 {
     font-size: 3em;
     line-height: 1.2em;
     font-weight: 400;
@@ -92,16 +98,16 @@ h2{
     @media (min-width: $breekpunt2) {
         font-size: 4em;
         font-weight: 900;
-        }
+    }
 }
 
-h3{
-    font-size:2em;
+h3 {
+    font-size: 2em;
     line-height: 1.2em;
     font-weight: 400;
 }
 
-h4{
+h4 {
     font-size: 3em;
     line-height: 1.1em;
     font-weight: 900;
@@ -112,48 +118,49 @@ h4{
 
 }
 
-strong{
+strong {
     font-weight: 900;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
 
-a{
+a {
     text-decoration: none;
     transition: $color3 0.3s ease;
 }
 
-a:hover, a:active{
+a:hover,
+a:active {
     text-decoration: none;
     transition: $color1 0.3s ease;
 }
 
-.container-fluid{
+.container-fluid {
     padding: 20px 40px;
 }
 
-.row{
-    display:flex;
+.row {
+    display: flex;
 }
 
-.bttns{
-    text-decoration:none;
-    color:$color4;
+.bttns {
+    text-decoration: none;
+    color: $color4;
     display: block;
     box-sizing: border-box;
     line-height: 64px;
-    text-align:center;
+    text-align: center;
     text-transform: uppercase;
-    font-weight:900;
+    font-weight: 900;
     font-size: 1em;
     background-color: $color3;
     margin-top: 1em;
     border-radius: 16px;
     transition: all 2s;
-    border:0;
+    border: 0;
     min-width: 100%;
     margin-top: 50px;
 
@@ -166,72 +173,74 @@ a:hover, a:active{
     }
 }
 
-.bttns:hover, .bttns:active, .bttns:visited{
+.bttns:hover,
+.bttns:active,
+.bttns:visited {
     background-color: $color3a;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 
 /*General elements - sidebar rotated*/
 
-.fixed-bottom{
+.fixed-bottom {
 
     margin-left: auto;
-    width:400px;
+    width: 400px;
 
 
     .rotate {
 
         /* Safari */
         -webkit-transform: rotate(90deg);
-        
+
         /* Firefox */
         -moz-transform: rotate(90deg);
-        
+
         /* IE */
         -ms-transform: rotate(90deg);
-        
+
         /* Opera */
         -o-transform: rotate(90deg);
-    
+
         position: absolute;
-        bottom:40vh;
+        bottom: 40vh;
         right: -140px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
 
-        @media (min-width: $breekpunt2){
-        right:-175px;
-        } 
-        
-        
-        
-    
+        @media (min-width: $breekpunt2) {
+            right: -175px;
+        }
+
+
+
+
         &.bttns:hover {
             background-color: $color1a;
         }
-    
-        &.bttns:active{
-            background-color: $color1a;
-        } 
-    
-        &.bttns:visited{
+
+        &.bttns:active {
             background-color: $color1a;
         }
 
-        &.lightblue:hover{
+        &.bttns:visited {
+            background-color: $color1a;
+        }
+
+        &.lightblue:hover {
             background-color: $color3a;
         }
 
-        &.lightblue:active{
+        &.lightblue:active {
             background-color: $color3a;
         }
 
-        &.lightblue:visited{
+        &.lightblue:visited {
             background-color: $color3a;
         }
 
-        &.gold{
+        &.gold {
             background-color: $color2;
             color: $color1;
 
@@ -239,7 +248,7 @@ a:hover, a:active{
                 background-color: $color4;
             }
         }
-        
+
     }
 
 }
@@ -249,164 +258,161 @@ a:hover, a:active{
 /* General elements - navbar*/
 
 
-.sticky-top{
+.sticky-top {
     background-color: $color4;
 
-    .navbar-brand{
+    .navbar-brand {
         padding: 0;
     }
 
-    .navbar-toggler{
+    .navbar-toggler {
         border-width: 0;
     }
 
 
-    .nav{
-            margin-left:auto;
-    
-            .nav-item{
-                .nav-link{
-                    color: $color1;
-                    font-size: 1em;
-                }
-                .nav-link:hover{
-                    color: $color3;
-                }
+    .nav {
+        margin-left: auto;
+
+        .nav-item {
+            .nav-link {
+                color: $color1;
+                font-size: 1em;
             }
-    }
-   
 
-    &.navbar{
-    box-sizing: border-box;
+            .nav-link:hover {
+                color: $color3;
+            }
+        }
     }
 
-      
+
+    &.navbar {
+        box-sizing: border-box;
+    }
+
+
     #menuToggle {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 50px;
-    
-    z-index: 5;
-    
-    -webkit-user-select: none;
-    user-select: none;
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 50px;
+
+        z-index: 5;
+
+        -webkit-user-select: none;
+        user-select: none;
     }
 
-    #menuToggle input{
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-    
-    cursor: pointer;
-    
-    opacity: 0; /* hide this */
-    z-index: 2; /* and place it over the hamburger */
-    
-    -webkit-touch-callout: none;
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+
+        cursor: pointer;
+
+        opacity: 0;
+        /* hide this */
+        z-index: 2;
+        /* and place it over the hamburger */
+
+        -webkit-touch-callout: none;
     }
 
     /*
     * Just a quick hamburger
     */
-    #menuToggle span
-    {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    
-    background: $color1;
-    border-radius: 3px;
-    
-    z-index: 1;
-    
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
-    
+    #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+
+        background: $color1;
+        border-radius: 3px;
+
+        z-index: 1;
+
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            opacity 0.55s ease;
+
     }
 
-    #menuToggle span:first-child
-    {
-    transform-origin: 0% 0%;
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
     }
 
-    #menuToggle span:nth-last-child(2)
-    {
-    transform-origin: 0% 100%;
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
     }
 
     /* Transform all the slices of hamburger into a crossmark */
 
-    #menuToggle input:checked ~ span
-    {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: $color1;
+    #menuToggle input:checked~span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: $color1;
     }
 
-    #menuToggle input:checked ~ span:nth-last-child(3)
-    {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
+    #menuToggle input:checked~span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
     }
 
-    #menuToggle input:checked ~ span:nth-last-child(2)
-    {
-    opacity: 1;
-    transform: rotate(-45deg) translate(0, -1px);
+    #menuToggle input:checked~span:nth-last-child(2) {
+        opacity: 1;
+        transform: rotate(-45deg) translate(0, -1px);
     }
 
     /* Position the menu */
 
     #menu {
-    position: absolute;
-    width: 100vw;
-    height: 200vh;
-    margin: -100px 0 0 0;
-    padding: 100px 50px;
-    right: -75px;
-    overflow: hidden;
-    box-sizing: border-box;
-    
-    background: $color3;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
+        position: absolute;
+        width: 100vw;
+        height: 200vh;
+        margin: -100px 0 0 0;
+        padding: 100px 50px;
+        right: -75px;
+        overflow: hidden;
+        box-sizing: border-box;
+
+        background: $color3;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
 
 
-        &.hide-menu{
-            height:0;
-            width:0;
-            top:-200px;
+        &.hide-menu {
+            height: 0;
+            width: 0;
+            top: -200px;
         }
 
     }
 }
-        
-#menu li{
+
+#menu li {
     padding: 10px 0;
     font-size: 1.6em;
     text-align: center;
-    }
+}
 
-#menu a{
-        color: $color4;
-    }
+#menu a {
+    color: $color4;
+}
 
-#menu a:hover{
-        color: $color1;
-} 
+#menu a:hover {
+    color: $color1;
+}
 
 /* General elements - cobbled transition*/
-   
-.cobbled-road{
+
+.cobbled-road {
     padding: 0;
     height: 20px;
     width: 100%;
@@ -415,75 +421,76 @@ a:hover, a:active{
 }
 
 
-.cobbled-road-white{
-padding: 0;
-height: 20px;
-width: 100%;
-background-image: url(../images/cobbles-transition-white.png);
-background-repeat: repeat-x;
-background-color: $color1;
+.cobbled-road-white {
+    padding: 0;
+    height: 20px;
+    width: 100%;
+    background-image: url(../images/cobbles-transition-white.png);
+    background-repeat: repeat-x;
+    background-color: $color1;
 }
 
-.cobbled-road-white-golden{
-padding: 0;
-height: 20px;
-width: 100%;
-background-image: url(../images/cobbles-transition-white.png);
-background-repeat: repeat-x;
-background-color: $color2;
+.cobbled-road-white-golden {
+    padding: 0;
+    height: 20px;
+    width: 100%;
+    background-image: url(../images/cobbles-transition-white.png);
+    background-repeat: repeat-x;
+    background-color: $color2;
 }
 
-.cobbled-road-white-lightblue{
-padding: 0;
-height: 20px;
-width: 100%;
-background-image: url(../images/cobbles-transition-white-lightblue.png);
-background-repeat: repeat-x;
-background-color: $color2;
+.cobbled-road-white-lightblue {
+    padding: 0;
+    height: 20px;
+    width: 100%;
+    background-image: url(../images/cobbles-transition-white-lightblue.png);
+    background-repeat: repeat-x;
+    background-color: $color2;
 }
 
-.cobbled-road-lightblue{
-padding: 0;
-height: 20px;
-width: 100%;
-background-image: url(../images/cobbles-transition-lightblue.png);
-background-repeat: repeat-x;
-background-color: $color4;
+.cobbled-road-lightblue {
+    padding: 0;
+    height: 20px;
+    width: 100%;
+    background-image: url(../images/cobbles-transition-lightblue.png);
+    background-repeat: repeat-x;
+    background-color: $color4;
 }
 
 /*General elements - footer*/
 
-.darkblue{
-    background-color: $color1;  
+.darkblue {
+    background-color: $color1;
 }
 
-.lightblue{
-    background-color: $color3;  
+.lightblue {
+    background-color: $color3;
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: flex-end;
 
 
-    .footer-content{
+    .footer-content {
         text-align: right;
 
-        .footer-item{
+        .footer-item {
             display: inline-block;
             margin-left: 20px;
             color: $color1;
 
-            &.white{
-                color: $color4; 
+            &.white {
+                color: $color4;
             }
         }
 
-        .footer-item:hover, .footer-item:active{
+        .footer-item:hover,
+        .footer-item:active {
             color: $color3;
 
-            &.white{
-                color: $color2; 
+            &.white {
+                color: $color2;
             }
         }
     }
@@ -494,16 +501,16 @@ background-color: $color4;
 
 /* HOME -- clouds in the back*/
 
-.movingclouds1{
+.movingclouds1 {
     position: absolute;
     z-index: -20;
     overflow: hidden;
     top: 300px;
     opacity: 0.5;
     transition: all 160s;
-    
 
-    .cloud1{
+
+    .cloud1 {
         max-width: 95%;
 
     }
@@ -511,32 +518,32 @@ background-color: $color4;
     @media (min-width: $breekpunt1) {
         top: 105px;
 
-        .cloud1{
+        .cloud1 {
             max-width: 600px;
-    
+
         }
-        
+
     }
 
 
 }
 
-.movingclouds2{
-        position: absolute;
-        z-index: -21;
-        overflow: hidden;
-        top: 110px;
-        left: 640px;
-        opacity: 0.4;
-        transition: all 45s;
+.movingclouds2 {
+    position: absolute;
+    z-index: -21;
+    overflow: hidden;
+    top: 110px;
+    left: 640px;
+    opacity: 0.4;
+    transition: all 45s;
 
-        .cloud2{
-            max-width: 300px;   
-        }  
+    .cloud2 {
+        max-width: 300px;
+    }
 
 }
 
-.movingclouds3{
+.movingclouds3 {
     position: absolute;
     z-index: -22;
     overflow: hidden;
@@ -545,82 +552,82 @@ background-color: $color4;
     opacity: 0.3;
     transition: all 45s;
 
-    .cloud3{
-        max-width: 450px;   
-    }  
+    .cloud3 {
+        max-width: 450px;
+    }
 
 }
 
 
 /* HOME -- above the fold header*/
 
-.header{
+.header {
     margin-top: 100px;
     min-height: 70vh;
     padding-bottom: 0 !important;
-    }
-
-
-    .above-the-fold{
-        display: flex;
-        max-width: 90vw;
-        align-items: flex-end;
-        padding: 0;
-        box-sizing: border-box;
-        
-
-        .main-info{
-            color: $color1;
-        }
-
-        .chapel{
-            position: relative;
-            height: 440px;
-
-            @media (min-width: $breekpunt1) {
-                height: 100%;
-            }
-
-            .chapel-img{
-                display: block;
-                margin: 50px auto 0 auto;
-                height: 400px;
-                position: absolute;
-                right: 100px;
-                bottom: -15px; 
-              
-
-                @media (min-width: $breekpunt1) {
-                    margin: auto auto 0 auto;
-                    right: 0px;
-                    bottom: -220px; 
-                }
-
-                @media (min-width: $breekpunt2) {
-                    right: -50px;
-                    bottom: -168px; 
-                    height: 500px;
-                }
-
-                @media (min-width: $breekpunt3a) {
-                    right: 100px;
-                    bottom: -175px; 
-                }
-            }
-            
-        }    
 }
 
 
-  
+.above-the-fold {
+    display: flex;
+    max-width: 90vw;
+    align-items: flex-end;
+    padding: 0;
+    box-sizing: border-box;
 
 
-     
+    .main-info {
+        color: $color1;
+    }
+
+    .chapel {
+        position: relative;
+        height: 440px;
+
+        @media (min-width: $breekpunt1) {
+            height: 100%;
+        }
+
+        .chapel-img {
+            display: block;
+            margin: 50px auto 0 auto;
+            height: 400px;
+            position: absolute;
+            right: 100px;
+            bottom: -15px;
+
+
+            @media (min-width: $breekpunt1) {
+                margin: auto auto 0 auto;
+                right: 0px;
+                bottom: -220px;
+            }
+
+            @media (min-width: $breekpunt2) {
+                right: -50px;
+                bottom: -168px;
+                height: 500px;
+            }
+
+            @media (min-width: $breekpunt3a) {
+                right: 100px;
+                bottom: -175px;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
 
 
 /*HOME -- below the fold info*/
 
-.below-the-fold{
+.below-the-fold {
     background-image: url(../images/cobbles-pattern1.png), url(../images/cobbles-pattern2.png);
     background-repeat: no-repeat;
     background-position: top right, center left;
@@ -630,42 +637,43 @@ background-color: $color4;
     padding-top: 80px;
     padding-bottom: 30px;
 
-    .about{
+    .about {
         margin-top: 50px;
         padding-bottom: 50px;
         display: flex;
 
-        .space-left{
+        .space-left {
             @media (min-width: $breekpunt1) {
-                order:-2;
+                order: -2;
             }
         }
 
-        .slowmo{
+        .slowmo {
             margin-bottom: 30px;
+
             @media (min-width: $breekpunt1) {
-                order:+1;
+                order: +1;
             }
         }
 
-        .stopwatch{
+        .stopwatch {
             @media (min-width: $breekpunt1) {
-                order:-1;
+                order: -1;
             }
 
-            .stopwatch-img{
+            .stopwatch-img {
                 display: block;
                 margin: auto;
             }
         }
 
-        .space-right{
+        .space-right {
             @media (min-width: $breekpunt1) {
-                order:+2;
+                order: +2;
             }
         }
 
-        .crocodile-img{
+        .crocodile-img {
             display: block;
             margin: 20px auto 0 auto;
         }
@@ -677,19 +685,27 @@ background-color: $color4;
 /* TIPS -- holy cross */
 
 
-.cross{
+.cross {
     display: flex;
     justify-content: center;
     max-width: 100%;
     flex-wrap: wrap;
     margin: 0 0 50px 0;
-    padding:0;
+    padding: 0;
 
     @media (min-width: $breekpunt1) {
         margin: 50px 0;
     }
 
-    .cross-box-1, .cross-box-2, .cross-box-3, .cross-box-4, .cross-box-5, .cross-box-6, .cross-box-7, .cross-box-8, .cross-box-9 {
+    .cross-box-1,
+    .cross-box-2,
+    .cross-box-3,
+    .cross-box-4,
+    .cross-box-5,
+    .cross-box-6,
+    .cross-box-7,
+    .cross-box-8,
+    .cross-box-9 {
         text-align: center;
         width: 100vw;
         height: 33vh;
@@ -701,28 +717,36 @@ background-color: $color4;
         padding: 20px;
 
         @media (min-width: $breekpunt1) {
-            width:26%; 
-            height: 26vh; 
-         }
-
-         @media (min-width: $breekpunt3) {
-            height: 33vh; 
-         }
-
-        a{
-            color:inherit;
+            width: 26%;
+            height: 26vh;
         }
 
-       }
-  
+        @media (min-width: $breekpunt3) {
+            height: 33vh;
+        }
 
-    .cross-box-2, .cross-box-4, .cross-box-5, .cross-box-6, .cross-box-8{
+        a {
+            color: inherit;
+        }
+
+    }
+
+
+    .cross-box-2,
+    .cross-box-4,
+    .cross-box-5,
+    .cross-box-6,
+    .cross-box-8 {
         background-color: $color2;
         transition: all 2s;
         border-style: solid;
     }
 
-    .cross-box-2:hover, .cross-box-4:hover, .cross-box-5:hover, .cross-box-6:hover, .cross-box-8:hover{
+    .cross-box-2:hover,
+    .cross-box-4:hover,
+    .cross-box-5:hover,
+    .cross-box-6:hover,
+    .cross-box-8:hover {
         background-color: $alpha_color1;
         color: $color4;
         border-color: $color1;
@@ -731,31 +755,31 @@ background-color: $color4;
 
     @media (min-width: $breekpunt1) {
 
-        .cross-box-2{
+        .cross-box-2 {
             border-style: solid;
             border-width: 5px 5px 0 5px;
-            border-radius: 16px 16px 0 0; 
+            border-radius: 16px 16px 0 0;
             position: relative;
             top: 5px;
         }
 
-        .cross-box-4{
+        .cross-box-4 {
             border-style: solid;
             border-width: 5px 0 5px 5px;
             border-radius: 16px 0 0 16px;
         }
 
-        .cross-box-5{
-            width:26%;
+        .cross-box-5 {
+            width: 26%;
         }
 
-        .cross-box-6{
+        .cross-box-6 {
             border-style: solid;
             border-width: 5px 5px 5px 0;
             border-radius: 0 16px 16px 0;
         }
 
-        .cross-box-8{
+        .cross-box-8 {
             border-style: solid;
             border-width: 0 5px 5px 5px;
             border-radius: 0 0 16px 16px;
@@ -770,16 +794,16 @@ background-color: $color4;
 
 /* APP -- header */
 
-.app{ 
+.app {
     margin: 50px 0;
 
-    .app-info{
+    .app-info {
 
-        h3{
+        h3 {
             color: $color3;
         }
 
-        ul{
+        ul {
             list-style-type: disc;
             list-style-position: outside;
             padding: 0 1em;
@@ -788,17 +812,17 @@ background-color: $color4;
 
     }
 
-    .app-map{
+    .app-map {
         padding-top: 50px;
 
         @media (min-width: $breekpunt1) {
-            padding-top:0;
+            padding-top: 0;
             margin: 0 0 0 30px;
-     
+
         }
 
-        .app-img{
-            width:100%;
+        .app-img {
+            width: 100%;
 
             @media (min-width: $breekpunt1) {
                 max-width: 90%;
@@ -812,19 +836,19 @@ background-color: $color4;
 
 /* CONTACT -- header */
 
-.hello{
+.hello {
     margin-top: 50px;
     padding-top: 50px 0;
 
-    h2{
+    h2 {
         color: $color4;
     }
 
-    h3{
+    h3 {
         color: $color4;
     }
 
-    ul{
+    ul {
         color: $color4;
         list-style-type: disc;
         list-style-position: outside;
@@ -832,58 +856,59 @@ background-color: $color4;
         margin: 0;
     }
 
-    p{
-        color: $color4; 
+    p {
+        color: $color4;
     }
 }
 
 
-.contact-form{
-        margin: 50px 0;
-        box-sizing: border-box;
+.contact-form {
+    margin: 50px 0;
+    box-sizing: border-box;
 
-    .rooster{
+    .rooster {
         width: 100%;
         height: 35vh;
 
-        .contact-img{
+        .contact-img {
             height: 100%;
             display: block;
             margin-left: auto;
         }
-     }
-    .form-inline{
+    }
+
+    .form-inline {
 
         background-color: $color4;
         padding: 20px;
         border-radius: 16px;
         margin-bottom: 50px;
-       
-        p{
-        font-size: 1.6em;
-        line-height: 1.6em;
+
+        p {
+            font-size: 1.6em;
+            line-height: 1.6em;
         }
 
     }
 
 
-    .inp{
-            position: relative;
-            margin: auto;
-            
-            font-weight: 900;
-            display: inline;
-            margin-right: 6px;
-            overflow-wrap: break-word;
-        
-        &.year-inp{
+    .inp {
+        position: relative;
+        margin: auto;
 
-            
+        font-weight: 900;
+        display: inline;
+        margin-right: 6px;
+        overflow-wrap: break-word;
+
+        &.year-inp {
+
+
             @media (min-width: $breekpunt-form2) {
                 margin-right: 0;
             }
 
-             
+
             @media (min-width: $breekpunt-form3) {
                 margin-right: 6px;
             }
@@ -897,7 +922,7 @@ background-color: $color4;
             }
         }
 
-        &.mail-inp{
+        &.mail-inp {
 
             margin-right: 0;
 
@@ -924,13 +949,13 @@ background-color: $color4;
 
 
         }
-    
 
-        #year{
+
+        #year {
             width: 92px;
         }
 
-        #e-mail{
+        #e-mail {
             width: 290px;
 
             @media (min-width: $breekpunt3) {
@@ -938,13 +963,13 @@ background-color: $color4;
             }
         }
 
-        #tel{
+        #tel {
             width: 290px;
         }
 
-        #name{
+        #name {
             width: 290px;
-             
+
             @media (min-width: $breekpunt3) {
                 max-width: 500px;
             }
@@ -952,63 +977,73 @@ background-color: $color4;
 
     }
 
-        //transform: rotateX(45deg) rotateY(-10deg) rotate(25deg) scale(2)
-    .label{
-            position: absolute;
-            top: -5px;
-            left: 0;
-            font-size: 0.75em;
-            color: $color2;
-            font-weight: 400;
-            transform-origin: 0 0;
-            transition: all .2s ease;
+    //transform: rotateX(45deg) rotateY(-10deg) rotate(25deg) scale(2)
+    .label {
+        position: absolute;
+        top: -5px;
+        left: 0;
+        font-size: 0.75em;
+        color: $color2;
+        font-weight: 400;
+        transform-origin: 0 0;
+        transition: all .2s ease;
+    }
+
+    .border {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 4px;
+        width: 100%;
+        background: $color3;
+        transform: scaleX(1);
+        transform-origin: 0 0;
+        transition: all 1s ease;
+    }
+
+    input {
+        -webkit-appearance: none;
+        border: 0;
+        font-family: inherit;
+        padding: 0;
+        max-width: 100%;
+        height: 48px;
+        font-weight: 900;
+        background: none;
+        border-radius: 0;
+        color: $color1;
+        transition: all .15s ease;
+
+        &::placeholder {
+            color: $color3;
+            font-size: 1em;
+            opacity: 0.6;
         }
-    .border{
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          height: 4px;
-          width: 100%;
-          background: $color3;
-          transform: scaleX(1);
-          transform-origin: 0 0;
-          transition: all 1s ease;
-        }
-    input{
-          -webkit-appearance: none;
-          border: 0;
-          font-family: inherit;
-          padding: 0;
-          max-width: 100%;
-          height: 48px;
-          font-weight: 900;
-          background: none;
-          border-radius: 0;
-          color: $color1;
-          transition: all .15s ease;
-          &::placeholder{
-              color: $color3;
-              font-size: 1em;
-              opacity: 0.6;
-          }
-          &:not(:placeholder-shown){
-            + span{
+
+        &:not(:placeholder-shown) {
+            +span {
                 color: $color1;
-            }}
-          &:hover{
-            background: none;
-              + .border{
-                  transform: scaleX(0);
-                }
             }
-          &:focus{
+        }
+
+        &:hover {
+            background: none;
+
+            +.border {
+                transform: scaleX(0);
+            }
+        }
+
+        &:focus {
             background: none;
             outline: none;
-            + span{
-              color: $color1;
-              transform: translateY(-20px) scale(.75);
-              + .border{
-                  transform: scaleX(0);
+
+            +span {
+                color: $color1;
+                transform: translateY(-20px) scale(.75);
+
+                +.border {
+                    transform: scaleX(0);
                 }
             }
         }
@@ -1017,21 +1052,21 @@ background-color: $color4;
 
 
 
-.news{
+.news {
 
     margin-top: 20px;
     font-size: 1.2em;
 
 }
 
-.label2{
+.label2 {
     display: inline;
 }
 
 .label2__checkbox {
     display: none;
 }
-  
+
 .label2__check {
     border-radius: 50%;
     border: 5px solid $color3;
@@ -1044,78 +1079,84 @@ background-color: $color4;
     align-items: center;
     justify-content: center;
     transition: border .3s ease;
-    
+
     &:hover {
         border: 5px solid $color1;
-      }
-    .icon{
+    }
+
+    .icon {
         color: $color4;
-        
+
         &:hover {
             color: $color1;
-          }
+        }
     }
 }
-  
-  .label2__checkbox:checked + .label2__text .label2__check {
-    animation: check .5s cubic-bezier(0.895, 0.030, 0.685, 0.220) forwards;
-    
-    .icon {
-      opacity: 1;
-      transform: scale(0);
-      color: $color4;
-      -webkit-text-stroke: 0;
-      animation: icon .3s cubic-bezier(1.000, 0.008, 0.565, 1.650) .1s 1 forwards;
-    }
-  }
 
-  
-  @keyframes icon {
+.label2__checkbox:checked+.label2__text .label2__check {
+    animation: check .5s cubic-bezier(0.895, 0.030, 0.685, 0.220) forwards;
+
+    .icon {
+        opacity: 1;
+        transform: scale(0);
+        color: $color4;
+        -webkit-text-stroke: 0;
+        animation: icon .3s cubic-bezier(1.000, 0.008, 0.565, 1.650) .1s 1 forwards;
+    }
+}
+
+
+@keyframes icon {
     from {
-      opacity: 0;
-      transform: scale(0.3);
+        opacity: 0;
+        transform: scale(0.3);
     }
+
     to {
-      opacity: 1;
-      transform: scale(1)
+        opacity: 1;
+        transform: scale(1)
     }
-  }
-  
-  @keyframes check {
+}
+
+@keyframes check {
     0% {
-      width: 1.5em;
-      height: 1.5em;
-      border-width: 5px;
+        width: 1.5em;
+        height: 1.5em;
+        border-width: 5px;
     }
+
     10% {
-      width: 1.5em;
-      height: 1.5em;
-      background: $color1;
-      border-width: 15px;
+        width: 1.5em;
+        height: 1.5em;
+        background: $color1;
+        border-width: 15px;
     }
+
     12% {
-      width: 1.5em;
-      height: 1.5em;
-      background: $color1;
-      border-width: 0;
+        width: 1.5em;
+        height: 1.5em;
+        background: $color1;
+        border-width: 0;
     }
+
     50% {
-      width: 2em;
-      height: 2em;
-      background: $color1;
-      border: 0;
+        width: 2em;
+        height: 2em;
+        background: $color1;
+        border: 0;
     }
+
     100% {
-      width: 2em;
-      height: 2em;
-      background: $color1;
-      border: 0;
+        width: 2em;
+        height: 2em;
+        background: $color1;
+        border: 0;
     }
-  }
+}
 
 /* LANDEN TOP 3*/
 
-.crosses-bg{
+.crosses-bg {
     background-image: url(../images/crosses-bg.png);
     background-repeat: no-repeat;
     background-position: top left;
@@ -1128,9 +1169,9 @@ background-color: $color4;
 
     @media (min-width: $breekpunt1) {
         padding-top: 80px;
-        }
+    }
 
-    .numbers{
+    .numbers {
         height: 100px;
         display: flex;
         align-items: flex-end;
@@ -1147,24 +1188,24 @@ background-color: $color4;
         @media (min-width: $breekpunt3a) {
             align-items: center;
             justify-content: flex-end;
-            }
+        }
 
-        h1{
+        h1 {
             font-size: 6em;
             line-height: 1em;
             font-weight: 900;
 
 
             @media (min-width: $breekpunt2) {
-                position: absolute; 
+                position: absolute;
                 right: 20px;
             }
 
-            @media (min-width: $breekpunt3) { 
+            @media (min-width: $breekpunt3) {
                 right: 20px;
                 margin-top: 20px;
-             }
-        
+            }
+
 
             @media (min-width: $breekpunt3a) {
                 font-size: 9.5em;
@@ -1176,16 +1217,16 @@ background-color: $color4;
         }
     }
 
-    .spacer{
+    .spacer {
         margin-top: 0;
 
         @media (min-width: $breekpunt1) {
-        margin-top: 50px;
+            margin-top: 50px;
         }
     }
 
-    .cards{
-        
+    .cards {
+
         width: 100%;
         height: 250px;
         border-radius: 16px;
@@ -1200,36 +1241,37 @@ background-color: $color4;
         @media (min-width: $breekpunt1) {
             margin-bottom: 100px;
             height: 350px;
-            }
+        }
 
-         @media (min-width: $breekpunt1) {
+        @media (min-width: $breekpunt1) {
             margin-bottom: 100px;
             height: 250px;
-            }
+        }
 
-        &.card-1{
-            background-image:url(../images/alaska.jpg);
+        &.card-1 {
+            background-image: url(../images/alaska.jpg);
             background-size: cover;
         }
 
-        &.card-2{
-            background-image:url(../images/antarctica.jpg);
+        &.card-2 {
+            background-image: url(../images/antarctica.jpg);
 
             @media (min-width: $breekpunt1) {
                 background-size: cover;
-                }
+            }
 
         }
 
-        &.card-3{
-            background-image:url(../images/korea.jpg);
+        &.card-3 {
+            background-image: url(../images/korea.jpg);
         }
 
-        h3, p{
+        h3,
+        p {
             margin-left: 20px;
         }
 
-        .bttns{
+        .bttns {
             margin-top: 0;
             background-color: $color4;
             color: $color1;
@@ -1238,21 +1280,21 @@ background-color: $color4;
             font-size: 1.6em;
             text-transform: none;
             transition: all 2s;
-        
-            &:hover{
-                background-color: $color2;
-             }
 
-            
+            &:hover {
+                background-color: $color2;
+            }
+
+
         }
-     
+
     }
 }
 
 /* AGENDA REBELLENCAFE */
 
-.golden-bg{
-    
+.golden-bg {
+
     background-color: $color2;
     position: relative;
     padding-top: 20px;
@@ -1260,25 +1302,27 @@ background-color: $color4;
 
     @media (min-width: $breekpunt1) {
         padding-top: 80px;
-        }
+    }
 
     @media (min-width: $breekpunt2) {
         background-image: url(../images/cafe-bg.png);
         background-repeat: no-repeat;
         background-position: bottom left;
         background-size: 40%;
-            }
-
-    h2, h3, p {
-        color: $color1; 
     }
 
-    h1{
-        color: $color4; 
+    h2,
+    h3,
+    p {
+        color: $color1;
     }
-    
 
-    .numbers{
+    h1 {
+        color: $color4;
+    }
+
+
+    .numbers {
         height: 100px;
         display: flex;
         align-items: flex-end;
@@ -1300,47 +1344,47 @@ background-color: $color4;
             margin-bottom: 0;
         }
 
-        h1{
+        h1 {
             font-size: 6em;
             line-height: 1em;
             font-weight: 900;
             margin-right: 20px;
 
 
-            @media (min-width: $breekpunt3) { 
+            @media (min-width: $breekpunt3) {
                 font-size: 9.5em;
                 line-height: 1em;
                 font-weight: 900;
-             }
-    
+            }
+
         }
 
-        h4{
+        h4 {
             color: $color4;
             text-transform: uppercase;
             font-size: 3em;
 
             @media (min-width: $breekpunt2) {
                 font-size: 2em;
-                }
+            }
 
             @media (min-width: $breekpunt3) {
                 font-size: 3em;
-                    }
+            }
 
         }
     }
 
-    .spacer{
+    .spacer {
         margin-top: 0;
 
         @media (min-width: $breekpunt1) {
-        margin-top: 50px;
+            margin-top: 50px;
         }
     }
 
-    .cards{
-        
+    .cards {
+
         width: 100%;
         height: 250px;
         border-radius: 16px;
@@ -1353,28 +1397,29 @@ background-color: $color4;
 
         @media (min-width: $breekpunt1) {
             margin-bottom: 20px;
-            }
+        }
 
-         @media (min-width: $breekpunt2) {
+        @media (min-width: $breekpunt2) {
             margin-bottom: 100px;
             justify-content: flex-end;
-            }
+        }
 
 
-        .cards-line{
+        .cards-line {
             background-color: $color1;
             width: 100%;
             height: 5px;
             border-radius: 2px;
             margin-top: 45px;
-    
+
         }
 
-        h3, p{
+        h3,
+        p {
             margin-left: 20px;
         }
 
-        .bttns{
+        .bttns {
             margin-top: 0;
             background-color: $color4;
             color: $color1;
@@ -1383,35 +1428,35 @@ background-color: $color4;
             font-size: 1.6em;
             text-transform: none;
             transition: all 2s;
-    
-        
-            &:hover{
+
+
+            &:hover {
                 background-color: $color1;
                 color: $color4;
-             }
+            }
 
-            
+
         }
-     
+
     }
 
-    .cafe{
+    .cafe {
         display: flex;
         justify-content: center;
         align-items: center;
 
-        .cafe-img{
+        .cafe-img {
             width: 100%;
             margin-top: 50px;
         }
     }
 
- 
+
 }
 
 /* CROWDFUNDING -- main frame */
 
-.crowdfunding-main{
+.crowdfunding-main {
     background-color: $color1;
     width: 100%;
     border-radius: 16px;
@@ -1428,8 +1473,8 @@ background-color: $color4;
     }
 }
 
-.video-frame{
-    
+.video-frame {
+
     width: 100%;
     border-radius: 12px 12px 0 0;
     border: 5px solid $color1;
@@ -1444,12 +1489,12 @@ background-color: $color4;
     align-items: center;
 
 
-    .play{
-    cursor: pointer;
+    .play {
+        cursor: pointer;
     }
 }
 
-.line{
+.line {
     height: 25px;
     margin: 20px auto 0;
     min-width: 100%;
@@ -1459,51 +1504,52 @@ background-color: $color4;
     border-radius: 16px;
 
 
-    &:before{
+    &:before {
         content: '';
         width: 100%;
         position: absolute;
-        left:0;
-        top:0;
+        left: 0;
+        top: 0;
         height: 25px;
         z-index: 1;
         background-color: $color4;
         border-radius: 16px;
     }
 
-    &:after{
+    &:after {
         content: '';
         height: 25px;
-        background-color: $color3; 
+        background-color: $color3;
         display: block;
         transition: 1s;
         width: 41%;
         animation: animate 1 4s;
         position: absolute;
-        top:0;
-        left:0;
+        top: 0;
+        left: 0;
         z-index: 2;
         border-radius: 16px;
 
     }
 
-    &.line1:after{
+    &.line1:after {
         max-width: 41%;
         border-radius: 16px;
     }
 
-    @keyframes animate{
-        0%{
-            width:0;
+    @keyframes animate {
+        0% {
+            width: 0;
         }
-        41%{
-            width:41%;
+
+        41% {
+            width: 41%;
         }
     }
 
-    p{
+    p {
         color: $color4;
-        z-index:3;
+        z-index: 3;
         position: absolute;
         left: 20px;
         font-weight: 900;
@@ -1511,31 +1557,32 @@ background-color: $color4;
 
 }
 
-.crowdfund-status{
+.crowdfund-status {
     display: flex;
     flex-wrap: wrap;
     padding: 0 20px 0 0;
 
-    .status_info{
+    .status_info {
         width: 50%;
         position: relative;
 
-        &.status-right{
-            padding:20px 0 0 20px;;
+        &.status-right {
+            padding: 20px 0 0 20px;
+            ;
         }
 
-        a{
+        a {
             color: $color4;
         }
 
-        .status-blue{
+        .status-blue {
             background-color: $color3;
             border-radius: 0 16px 0 16px;
             width: 100%;
             padding: 20px;
         }
-  
-        .triangle{
+
+        .triangle {
             position: absolute;
             bottom: -35px;
             left: 20px;
@@ -1543,38 +1590,38 @@ background-color: $color4;
         }
     }
 
-    .status-left{
-        display:flex;
+    .status-left {
+        display: flex;
         flex-direction: column;
         align-items: flex-end;
         text-align: right;
     }
 
-    .status-left{
-       margin-top: 20px;
+    .status-left {
+        margin-top: 20px;
     }
 
 }
 
-.crowdfunding-menu{
+.crowdfunding-menu {
     color: $color4;
-    background-image:url(../images/cobbles-pattern3.png), url(../images/cobbles-pattern4.png);
+    background-image: url(../images/cobbles-pattern3.png), url(../images/cobbles-pattern4.png);
     background-repeat: no-repeat;
     background-position: left bottom, left top;
     padding-bottom: 100px;
 
 
-    .cf-flexcol{
+    .cf-flexcol {
         display: flex;
         flex-wrap: wrap;
         padding-left: 20px;
         padding-right: 20px;
-   
-        .cf-spacer{
+
+        .cf-spacer {
             width: 10%;
         }
 
-        .cf-card{
+        .cf-card {
             margin-top: 300px;
             max-width: 100%;
             position: relative;
@@ -1589,19 +1636,19 @@ background-color: $color4;
                 margin-top: 250px;
             }
 
-            a{
-                color:$color4;
+            a {
+                color: $color4;
             }
 
-            
-            .cf-item{
+
+            .cf-item {
 
                 background-color: $color1;
                 padding: 40px 20px 20px 20px;
                 border-radius: 16px;
                 min-height: 300px;
                 position: relative;
-                z-index:1;
+                z-index: 1;
                 cursor: pointer;
                 transition: all 2s;
 
@@ -1609,29 +1656,29 @@ background-color: $color4;
                     min-height: 250px;
                 }
 
-                
+
                 @media (min-width: $breekpunt2) {
                     min-height: 300px;
                 }
 
-                h3{
+                h3 {
                     text-align: center;
                 }
 
-                &:hover{
+                &:hover {
                     background-color: $color1a;
                 }
             }
 
-            .cobble_pos1{
+            .cobble_pos1 {
                 position: absolute;
                 width: 90%;
                 top: -120px;
                 left: 30px;
                 z-index: 0;
             }
-        
-            .cobble_pos2{
+
+            .cobble_pos2 {
                 position: absolute;
                 width: 80%;
                 top: -120px;
@@ -1641,16 +1688,16 @@ background-color: $color4;
                 @media (min-width: $breekpunt2) {
                     top: -120px;
                 }
-                
+
             }
 
-            .cobble_pos3{
+            .cobble_pos3 {
                 position: absolute;
                 width: 85%;
                 top: -120px;
                 left: 60px;
                 z-index: 0;
-                
+
                 @media (min-width: $breekpunt2) {
                     top: -140px;
                 }
@@ -1661,7 +1708,7 @@ background-color: $color4;
 
             }
 
-            .cobble_pos4{
+            .cobble_pos4 {
                 position: absolute;
                 width: 85%;
                 top: -120px;
@@ -1670,13 +1717,13 @@ background-color: $color4;
                 @media (min-width: $breekpunt1) {
                     top: -80px;
                 }
-    
+
             }
 
-            .sisse-img{
+            .sisse-img {
                 width: 30%;
                 position: absolute;
-                right:0;
+                right: 0;
                 top: -220px;
                 z-index: 2;
 
@@ -1702,7 +1749,7 @@ background-color: $color4;
 
             }
 
-            .projector-img{
+            .projector-img {
                 width: 50%;
                 position: absolute;
                 right: 0px;
@@ -1726,8 +1773,8 @@ background-color: $color4;
                     top: -205px;
                 }
             }
-            
-            .ticket-img{
+
+            .ticket-img {
                 width: 70%;
                 position: absolute;
                 right: 30px;
@@ -1753,16 +1800,16 @@ background-color: $color4;
                 @media (min-width: $breekpunt4) {
                     top: -150px;
                 }
-            }   
+            }
 
-            .sweater-img{
+            .sweater-img {
                 width: 40%;
                 position: absolute;
                 right: 10px;
                 top: -240px;
                 right: -20px;
                 z-index: 2;
-            
+
                 @media (min-width: $breekpunt1) {
                     top: -270px;
                 }
@@ -1784,7 +1831,7 @@ background-color: $color4;
                 }
 
 
-            }         
+            }
 
         }
     }
@@ -1793,28 +1840,28 @@ background-color: $color4;
 /* MOZILLA ABSOLUTE POSITION -- Fixing the bug */
 
 @-moz-document url-prefix() {
-/* HOME -- above the fold header*/
+    /* HOME -- above the fold header*/
 
-.header{
-    margin-top: 100px;
-    min-height: 70vh;
-    padding-bottom: 0 !important;
+    .header {
+        margin-top: 100px;
+        min-height: 70vh;
+        padding-bottom: 0 !important;
     }
 
 
-    .above-the-fold{
+    .above-the-fold {
         display: flex;
         max-width: 90vw;
         align-items: flex-end;
         padding: 0;
         box-sizing: border-box;
-        
 
-        .main-info{
+
+        .main-info {
             color: $color1;
         }
 
-        .chapel{
+        .chapel {
             position: relative;
             height: 440px;
 
@@ -1822,38 +1869,35 @@ background-color: $color4;
                 height: 100%;
             }
 
-            .chapel-img{
+            .chapel-img {
                 display: block;
                 margin: 50px auto 0 auto;
                 height: 400px;
                 position: absolute;
                 right: 100px;
-                bottom: -15px; 
-              
+                bottom: -15px;
+
 
                 @media (min-width: $breekpunt1) {
                     margin: auto auto 0 auto;
                     right: 0px;
-                    bottom: -240px; 
+                    bottom: -240px;
                 }
 
                 @media (min-width: $breekpunt2) {
                     right: -30px;
-                    bottom: -190px; 
+                    bottom: -190px;
                     height: 500px;
                 }
 
                 @media (min-width: $breekpunt3) {
                     right: 50px;
-                    bottom: -190px; 
+                    bottom: -190px;
                 }
 
             }
-            
-        }    
+
+        }
     }
 
 }
-
-
-
