@@ -804,10 +804,31 @@ a:active {
         }
 
         ul {
-            list-style-type: disc;
-            list-style-position: outside;
-            padding: 0 1em;
+            padding: 0;
             margin: 0;
+            list-style-position: inside;
+
+            li{
+                margin: 5px 0 5px 2.5em;
+                text-indent: -2.5em;
+            }
+    
+            .list1{
+                list-style-image: url(../images/list-cobble1-blue.png);    
+            }
+    
+            .list2{
+                list-style-image: url(../images/list-cobble2-blue.png);
+            }
+    
+            .list3{
+                list-style-image: url(../images/list-cobble3-blue.png);
+            }
+    
+            .list4{
+                list-style-image: url(../images/list-cobble4-blue.png);
+            }
+    
         }
 
     }
@@ -850,10 +871,34 @@ a:active {
 
     ul {
         color: $color4;
-        list-style-type: disc;
-        list-style-position: outside;
-        padding: 0 1em;
+        padding: 0;
         margin: 0;
+        list-style-position: inside;
+
+        li{
+            margin: 5px 0 5px 2.5em;
+            text-indent: -2.5em;
+        }
+
+        .list1{
+            list-style-image: url(../images/list-cobble1-white.png);    
+        }
+
+        .list2{
+            list-style-image: url(../images/list-cobble2-white.png);
+        }
+
+        .list3{
+            list-style-image: url(../images/list-cobble3-white.png);
+        }
+
+        .list4{
+            list-style-image: url(../images/list-cobble4-white.png);
+        }
+        .list5{
+            list-style-image: url(../images/list-cobble5-white.png);
+        }
+        
     }
 
     p {

@@ -37,7 +37,9 @@ body {
   opacity: 0.6;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Londrina Solid", cursive;
   text-transform: uppercase;
 }
@@ -101,7 +103,8 @@ a {
   transition: #336699 0.3s ease;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   text-decoration: none;
   -webkit-transition: #000033 0.3s ease;
   transition: #000033 0.3s ease;
@@ -150,7 +153,9 @@ a:hover, a:active {
   }
 }
 
-.bttns:hover, .bttns:active, .bttns:visited {
+.bttns:hover,
+.bttns:active,
+.bttns:visited {
   background-color: #1f4e7c;
   cursor: pointer;
 }
@@ -438,11 +443,13 @@ a:hover, a:active {
   color: white;
 }
 
-.footer .footer-content .footer-item:hover, .footer .footer-content .footer-item:active {
+.footer .footer-content .footer-item:hover,
+.footer .footer-content .footer-item:active {
   color: #336699;
 }
 
-.footer .footer-content .footer-item:hover.white, .footer .footer-content .footer-item:active.white {
+.footer .footer-content .footer-item:hover.white,
+.footer .footer-content .footer-item:active.white {
   color: #CCCC99;
 }
 
@@ -655,7 +662,15 @@ a:hover, a:active {
   }
 }
 
-.cross .cross-box-1, .cross .cross-box-2, .cross .cross-box-3, .cross .cross-box-4, .cross .cross-box-5, .cross .cross-box-6, .cross .cross-box-7, .cross .cross-box-8, .cross .cross-box-9 {
+.cross .cross-box-1,
+.cross .cross-box-2,
+.cross .cross-box-3,
+.cross .cross-box-4,
+.cross .cross-box-5,
+.cross .cross-box-6,
+.cross .cross-box-7,
+.cross .cross-box-8,
+.cross .cross-box-9 {
   text-align: center;
   width: 100vw;
   height: 33vh;
@@ -677,30 +692,62 @@ a:hover, a:active {
 }
 
 @media (min-width: 768px) {
-  .cross .cross-box-1, .cross .cross-box-2, .cross .cross-box-3, .cross .cross-box-4, .cross .cross-box-5, .cross .cross-box-6, .cross .cross-box-7, .cross .cross-box-8, .cross .cross-box-9 {
+  .cross .cross-box-1,
+  .cross .cross-box-2,
+  .cross .cross-box-3,
+  .cross .cross-box-4,
+  .cross .cross-box-5,
+  .cross .cross-box-6,
+  .cross .cross-box-7,
+  .cross .cross-box-8,
+  .cross .cross-box-9 {
     width: 26%;
     height: 26vh;
   }
 }
 
 @media (min-width: 1177px) {
-  .cross .cross-box-1, .cross .cross-box-2, .cross .cross-box-3, .cross .cross-box-4, .cross .cross-box-5, .cross .cross-box-6, .cross .cross-box-7, .cross .cross-box-8, .cross .cross-box-9 {
+  .cross .cross-box-1,
+  .cross .cross-box-2,
+  .cross .cross-box-3,
+  .cross .cross-box-4,
+  .cross .cross-box-5,
+  .cross .cross-box-6,
+  .cross .cross-box-7,
+  .cross .cross-box-8,
+  .cross .cross-box-9 {
     height: 33vh;
   }
 }
 
-.cross .cross-box-1 a, .cross .cross-box-2 a, .cross .cross-box-3 a, .cross .cross-box-4 a, .cross .cross-box-5 a, .cross .cross-box-6 a, .cross .cross-box-7 a, .cross .cross-box-8 a, .cross .cross-box-9 a {
+.cross .cross-box-1 a,
+.cross .cross-box-2 a,
+.cross .cross-box-3 a,
+.cross .cross-box-4 a,
+.cross .cross-box-5 a,
+.cross .cross-box-6 a,
+.cross .cross-box-7 a,
+.cross .cross-box-8 a,
+.cross .cross-box-9 a {
   color: inherit;
 }
 
-.cross .cross-box-2, .cross .cross-box-4, .cross .cross-box-5, .cross .cross-box-6, .cross .cross-box-8 {
+.cross .cross-box-2,
+.cross .cross-box-4,
+.cross .cross-box-5,
+.cross .cross-box-6,
+.cross .cross-box-8 {
   background-color: #CCCC99;
   -webkit-transition: all 2s;
   transition: all 2s;
   border-style: solid;
 }
 
-.cross .cross-box-2:hover, .cross .cross-box-4:hover, .cross .cross-box-5:hover, .cross .cross-box-6:hover, .cross .cross-box-8:hover {
+.cross .cross-box-2:hover,
+.cross .cross-box-4:hover,
+.cross .cross-box-5:hover,
+.cross .cross-box-6:hover,
+.cross .cross-box-8:hover {
   background-color: rgba(0, 0, 51, 0.5);
   color: white;
   border-color: #000033;
@@ -747,10 +794,30 @@ a:hover, a:active {
 }
 
 .app .app-info ul {
-  list-style-type: disc;
-  list-style-position: outside;
-  padding: 0 1em;
+  padding: 0;
   margin: 0;
+  list-style-position: inside;
+}
+
+.app .app-info ul li {
+  margin: 5px 0 5px 2.5em;
+  text-indent: -2.5em;
+}
+
+.app .app-info ul .list1 {
+  list-style-image: url(../images/list-cobble1-blue.png);
+}
+
+.app .app-info ul .list2 {
+  list-style-image: url(../images/list-cobble2-blue.png);
+}
+
+.app .app-info ul .list3 {
+  list-style-image: url(../images/list-cobble3-blue.png);
+}
+
+.app .app-info ul .list4 {
+  list-style-image: url(../images/list-cobble4-blue.png);
 }
 
 .app .app-map {
@@ -790,10 +857,34 @@ a:hover, a:active {
 
 .hello ul {
   color: white;
-  list-style-type: disc;
-  list-style-position: outside;
-  padding: 0 1em;
+  padding: 0;
   margin: 0;
+  list-style-position: inside;
+}
+
+.hello ul li {
+  margin: 5px 0 5px 2.5em;
+  text-indent: -2.5em;
+}
+
+.hello ul .list1 {
+  list-style-image: url(../images/list-cobble1-white.png);
+}
+
+.hello ul .list2 {
+  list-style-image: url(../images/list-cobble2-white.png);
+}
+
+.hello ul .list3 {
+  list-style-image: url(../images/list-cobble3-white.png);
+}
+
+.hello ul .list4 {
+  list-style-image: url(../images/list-cobble4-white.png);
+}
+
+.hello ul .list5 {
+  list-style-image: url(../images/list-cobble5-white.png);
 }
 
 .hello p {
@@ -1316,7 +1407,8 @@ a:hover, a:active {
   background-image: url(../images/korea.jpg);
 }
 
-.crosses-bg .cards h3, .crosses-bg .cards p {
+.crosses-bg .cards h3,
+.crosses-bg .cards p {
   margin-left: 20px;
 }
 
@@ -1360,7 +1452,9 @@ a:hover, a:active {
   }
 }
 
-.golden-bg h2, .golden-bg h3, .golden-bg p {
+.golden-bg h2,
+.golden-bg h3,
+.golden-bg p {
   color: #000033;
 }
 
@@ -1493,7 +1587,8 @@ a:hover, a:active {
   margin-top: 45px;
 }
 
-.golden-bg .cards h3, .golden-bg .cards p {
+.golden-bg .cards h3,
+.golden-bg .cards p {
   margin-left: 20px;
 }
 
