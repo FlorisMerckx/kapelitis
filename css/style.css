@@ -532,6 +532,18 @@ a:active {
   color: #000033;
 }
 
+.above-the-fold .main-info h1 {
+  font-size: 4.75em;
+}
+
+@media (min-width: 442px) {
+  .above-the-fold .main-info h1 {
+    font-size: 6em;
+    line-height: 1em;
+    font-weight: 900;
+  }
+}
+
 .above-the-fold .chapel {
   position: relative;
   height: 440px;
@@ -626,6 +638,7 @@ a:active {
 .below-the-fold .about .stopwatch .stopwatch-img {
   display: block;
   margin: auto;
+  max-width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -639,6 +652,7 @@ a:active {
 .below-the-fold .about .crocodile-img {
   display: block;
   margin: 20px auto 0 auto;
+  max-width: 100%;
 }
 
 /* TIPS -- holy cross */
@@ -918,6 +932,7 @@ a:active {
 .contact-form .form-inline p {
   font-size: 1.6em;
   line-height: 1.6em;
+  max-width: 100%;
 }
 
 .contact-form .inp {

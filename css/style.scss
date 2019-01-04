@@ -33,6 +33,8 @@ $breekpunt-form6: 1004px;
 $breekpunt-form7: 1357px;
 $breekpunt-form8: 1412px;
 
+$breekpunt_xxs: 442px;
+
 
 /* General styles*/
 * {
@@ -580,8 +582,19 @@ a:active {
     box-sizing: border-box;
 
 
+
     .main-info {
         color: $color1;
+
+        h1{
+            font-size: 4.75em;
+
+            @media (min-width: $breekpunt_xxs){
+                font-size: 6em;
+                line-height: 1em;
+                font-weight: 900;
+            }
+        }
     }
 
     .chapel {
@@ -668,6 +681,7 @@ a:active {
             .stopwatch-img {
                 display: block;
                 margin: auto;
+                max-width: 100%; 
             }
         }
 
@@ -680,6 +694,9 @@ a:active {
         .crocodile-img {
             display: block;
             margin: 20px auto 0 auto;
+
+            max-width: 100%; 
+
         }
 
     }
@@ -936,6 +953,7 @@ a:active {
         p {
             font-size: 1.6em;
             line-height: 1.6em;
+            max-width: 100%;
         }
 
     }
