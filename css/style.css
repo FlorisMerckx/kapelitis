@@ -568,14 +568,14 @@ a:active {
   .above-the-fold .chapel .chapel-img {
     margin: auto auto 0 auto;
     right: 0px;
-    bottom: -230px;
+    bottom: -235px;
   }
 }
 
 @media (min-width: 992px) {
   .above-the-fold .chapel .chapel-img {
     right: -50px;
-    bottom: -175px;
+    bottom: -240px;
     height: 500px;
   }
 }
@@ -583,7 +583,7 @@ a:active {
 @media (min-width: 1237px) {
   .above-the-fold .chapel .chapel-img {
     right: 100px;
-    bottom: -175px;
+    bottom: -240px;
   }
 }
 
@@ -2131,20 +2131,20 @@ a:active {
     .above-the-fold .chapel .chapel-img {
       margin: auto auto 0 auto;
       right: 0px;
-      bottom: -240px;
+      bottom: -235px;
     }
   }
   @media (min-width: 992px) {
     .above-the-fold .chapel .chapel-img {
       right: -30px;
-      bottom: -190px;
+      bottom: -240px;
       height: 500px;
     }
   }
   @media (min-width: 1177px) {
     .above-the-fold .chapel .chapel-img {
       right: 50px;
-      bottom: -190px;
+      bottom: -240px;
     }
   }
 }
